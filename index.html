@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product page</title>
+	<link rel="stylesheet" type="text/css" href="css/grid.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+</head>
+<body>
+
+	<div class="layout-main row clearfix">
+		<div class="left-menu col-lg-2 col-md-4 col-sm-12 loadingMask" id="filter">
+			<div class="loader">Loading filters...</div>
+
+			<h4>Filters</h4>
+			<div id="filters">
+			</div>
+
+		</div>
+		<div class="product-list-container col-lg-10 col-md-8 col-sm-12">
+			<div class="product-top-bar">
+				<p class="results" id="result-heading"></p>
+				<ul class="sort-section">
+					<li class="sortBy">Sort by</li>
+					<li class="sort-type" id="rel">Relevance</li>
+					<li class="sort-type" id="low-t-high">Price- Low to High</li>
+					<li class="sort-type" id="high-t-low">Price - High to Low</li>
+				</ul>
+			</div>
+			<div class="products-list row clearfix">
+				<div id="products">
+					<p>Loading products...</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="js/helper.js"></script>
+	<script type="text/javascript" src="js/product.js"></script>
+	<script type="text/javascript" src="js/filter.js"></script>
+</body>
+</html>
